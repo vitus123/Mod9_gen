@@ -4,7 +4,7 @@ def all_variants(s):
     for i in range(1,n):
         subset = ""
         for j in range(n):
-            if (i >j) > 0:
+            if (i << j) > 0:
                 subset += s[j]
         yield subset
 
